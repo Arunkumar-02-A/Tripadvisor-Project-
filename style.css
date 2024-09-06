@@ -17,9 +17,14 @@ body {
     margin-top: 15px;
     display: flex;
     align-items: center;
+   
+ 
 }
 .Navebar-1 img{
     width: 210px;
+}
+.Navebar-5,.Navebar-6{
+    display: none;
 }
 
 .Navebar-2 {
@@ -38,6 +43,7 @@ body {
 }
 
 .Navebar-4 {
+    display: flex;
     margin-left: 20px;
     border: solid black 1px;
     border-radius: 20px;
@@ -84,7 +90,6 @@ body {
     gap: 33px;
     font-size: 17px;
     margin-bottom: 10px;
-    
 }
 
 .title-2 img {
@@ -108,7 +113,13 @@ body {
 .search {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border:solid rgb(251, 243, 243) 1px ;
 }
+
 
 .search-1 {
     margin-top: 15px;
@@ -118,6 +129,7 @@ body {
     width: 55%;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
 .search-1 h4 {
@@ -334,6 +346,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 160px;
+    
    
 }
 
@@ -488,6 +501,186 @@ body {
 
 /* Media Queries */
 
+/* BOX */
+
+@media screen and (max-width:1050px) {
+    .box-2{
+        /* border: solid rgb(22, 151, 221) 1px; */
+        width: 41%;
+        height: 73%;
+        font-size: larger;
+        position: relative;
+        position: absolute;
+        top: 18%;
+        left: 14%;
+    }
+
+    .box-2__one{
+        font-weight: bold;
+    }
+    
+    .box-2__two{
+        font-weight: bold;
+        font-size: 29px;
+        position: relative;
+    }
+
+    .box-2__three{
+        font-weight: bold;
+        font-size: 28px;
+        position: absolute;
+        top: 63px;
+    }
+
+    .box-2__four{
+        font-weight: bold;
+        font-size: 13px;
+        width: 90%;
+        margin-top: 39px;
+        margin-bottom: 8px;
+    }
+    
+    .box-2__six{
+        border: solid black 1px;
+        display: inline;
+        border-radius: 30px;
+        font-size: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left:10px;
+        padding-right: 10px;
+    }
+
+    /* EXPLORE */
+
+    .explore-box-1 {
+        margin-top: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+    }
+    
+    .explore-box-1 img {
+        width: 100%;
+        border-radius: 20px;
+        border: solid black 1px;
+    }
+    
+    .explore-box-2__two {
+        font-weight: bold;
+        font-size: 21px;
+        color: white;
+        position: absolute;
+        top: 53%;
+        left: 4%;
+    }
+    
+    .explore-box-2__six {
+        border: solid black 1px;
+        display: inline;
+        border-radius: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-weight: bold;
+        background-color: rgb(240, 237, 237);
+        color: rgb(4, 4, 4);
+        position: absolute;
+        top: 75%;
+        left:10%;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: 1.5s;
+    }
+    
+    .explore-box-2__six:hover {
+        cursor: pointer;
+        background-color: #DAD3FC;
+        color: black;
+        transition: 1s;
+    }
+
+    /* Adventure */
+
+.one {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 24%;
+    left: 3.5%;
+}
+ 
+.two {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 26%;
+    left: 30%;
+}
+.three {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 65px;
+    left: 58%;
+}
+.four {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 65px;
+    left: 79%;
+}
+
+/* Hotels */
+
+.hotels {
+    margin-top:180px;
+    
+}
+
+.one-1{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 88%;
+    left: 3%;
+}
+.two-2{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 89%;
+    left: 29%;
+}
+.three-3{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 89%;
+    left: 56%;
+}
+
+.five-5{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 89%;
+    left: 79%;
+}
+}
+
+
+
+
 @media screen and (max-width:800px){
     body{
         font-size: 10px;
@@ -503,8 +696,23 @@ body {
     body{
         font-size: 10px;
     }  
+    .hotels {
+        margin-top:80px;
+    }
+    .Navebar-2,.Navebar-4,.Navebar-3,.title-1,.title-2{
+        display: none;
+    }
+    .Navebar-5{
+        display: block;
+        padding-right: 20%;
+        font-size: larger;
+    }
+    .Navebar-6{
+        display: block;
+        padding-left: 20%;
+    }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:650px) {
     .box-2{
         /* border: solid rgb(22, 151, 221) 1px; */
         width: 43%;
@@ -550,6 +758,127 @@ body {
     }
 }
 
+/* EXPLORE */
+@media screen and (max-width:650px) {
+    .explore-box-1 {
+        margin-top: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+    }
+    
+    .explore-box-1 img {
+        width: 100%;
+        border-radius: 20px;
+        border: solid black 1px;
+    }
+    
+    .explore-box-2__two {
+        font-weight: bold;
+        font-size: 14PX;
+        color: white;
+        position: absolute;
+        top: 53%;
+        left: 3%;
+    }
+    
+    .explore-box-2__six {
+        border: solid black 1px;
+        display: inline;
+        border-radius: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-weight: bold;
+        background-color: rgb(240, 237, 237);
+        color: rgb(4, 4, 4);
+        position: absolute;
+        top: 75%;
+        left:10%;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: 1.5s;
+    }
+    
+    .explore-box-2__six:hover {
+        cursor: pointer;
+        background-color: #DAD3FC;
+        color: black;
+        transition: 1s;
+    }
 
+    /* Adventure */
+
+.one {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 64%;
+    left: 7.5%;
+}
+ 
+.two {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 64%;
+    left: 61.5%;
+}
+.three {
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 65px;
+    left: 12%;
+}
+.four {
+    font-size: 14.5px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 65px;
+    left: 59%;
+}
+
+/* Hotels */
+
+.one-1{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+.two-2{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 61%;
+}
+.three-3{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 95%;
+    left: 7%;
+}
+
+.five-5{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 95%;
+    left: 58.5%;
+}
+
+}
 
 
